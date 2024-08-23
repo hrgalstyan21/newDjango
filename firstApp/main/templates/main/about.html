@@ -1,11 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>About</title>
-</head>
-<body>
-  <h2>This is what about my page</h2>
-  <p>Content</p>
-</body>
-</html>
+{% include 'main//header.html' %}
+{% block content %}
+    <h1>About </h1>
+    <p>About page</p>
+{% endblock %}
+
+{% include 'main//footer.html' %}

@@ -1,0 +1,66 @@
+<style>
+        /* Global Styling */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Content Styling */
+        .content {
+            flex: 1;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #800080;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+            animation: slideUp 1s ease-out forwards;
+        }
+
+        /* Footer Text Animation */
+        footer p {
+            margin: 0;
+            font-size: 18px;
+            opacity: 0;
+            animation: fadeInFooter 1.5s ease-in forwards 1s;
+        }
+
+        /* Keyframes for animations */
+        @keyframes slideUp {
+            from {
+                transform: translateY(100%);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInFooter {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content">
+        <!-- Your main content goes here -->
+        <p>Main content goes here...</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 WelcomeWebsite. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

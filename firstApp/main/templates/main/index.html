@@ -1,14 +1,100 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to WelcomeWebsite</title>
+    <style>
+        /* Global Styling */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Content Styling */
+        .content {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to right, #ffccff, #ffffff);
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .welcome-message {
+            max-width: 800px;
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .welcome-message h1 {
+            font-size: 36px;
+            color: #800080;
+            margin-bottom: 20px;
+            animation: fadeIn 1.5s ease-out forwards;
+        }
+
+        .welcome-message p {
+            font-size: 20px;
+            color: #444;
+            margin-bottom: 30px;
+            line-height: 1.6;
+            animation: fadeIn 2s ease-out forwards;
+        }
+
+        .welcome-message .cta-button {
+            font-size: 18px;
+            color: white;
+            background-color: #670027;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+            animation: fadeIn 2.5s ease-out forwards;
+        }
+
+        .cta-button:hover {
+            background-color: #810021;
+        }
+
+        /* Keyframes for animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
 </head>
 <body>
-<h1>Welcome to Website</h1>
-<p>Website is working</p>
+
+  {% include 'main//header.html'%}
+
+    <div class="content">
+        <div class="welcome-message">
+            <h1>Welcome to WelcomeWebsite!</h1>
+            <p>Your journey to an extraordinary experience begins here. We’re thrilled to have you with us. Dive into our world of creativity, innovation, and passion. Let us inspire you to dream big and achieve more!</p>
+            <a href="#" class="cta-button">Explore More</a>
+        </div>
+    </div>
+
+  {% include 'main//footer.html' %}
+
 </body>
 </html>
+
+
+
