@@ -1,3 +1,45 @@
 body {
-    background: #6c5535;
+    background: darkorange;
+}
+
+aside {
+    float: left;
+    background: red;
+    width: 20%;
+    padding: 2.5%;
+    height: 100vh;
+    color: white;
+    border-right:5px solid white;
+}
+aside img{
+    width: 100px;
+    float: left;
+}
+
+aside .logo {
+    font-size: 40px;
+    margin-left: 5px;
+    font-weight: bold;
+    position: relative;
+    top: -5px;
+}
+
+aside h3{
+    margin-top: 50px;
+    font-size: 40px;
+}
+
+aside ul{list-style-type: none;}
+aside ul li{
+    color: white;
+    display: block;
+    margin-top: 20px;
+    transition: all .6s ease;
+}
+
+aside ul li:hover, aside ul a:hover{
+    color: black;
+    text-decoration: none;
+    transform: scale(1.05);
+
 }
