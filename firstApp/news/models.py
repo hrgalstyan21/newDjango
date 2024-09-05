@@ -1,7 +1,7 @@
 from django.db import models
 
 class Article(models.Model):
-    title = models.CharField('Title', max_length=25, default='Default Title')
+    title = models.CharField('Title', max_length=100, default='max_length=100')
     anons = models.CharField('Anons', max_length=100, default='Default Anons')
     full_text = models.TextField('Full Text',  default='Default Full Text')
     date = models.DateTimeField('DateTime')
