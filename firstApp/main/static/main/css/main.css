@@ -7,7 +7,7 @@ aside {
     background: #9e0000;
     width: 20%;
     padding: 2.5%;
-    height: 200vh;
+    height: 100vh;
     color: white;
     border-right:5px solid white;
 }
@@ -90,3 +90,15 @@ main .features h1{
 }
 
 main .features p{max-width: 700px; margin: 20px auto;}
+
+
+main .features{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.features form{
+    width: 500px;
+}
